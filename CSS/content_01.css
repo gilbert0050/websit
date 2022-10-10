@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    background: #fff;
+}
+.page
+{
+    width: 100%;
+    height: 100vh;
+}
+.page .navigator
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 10000;
+}
+.page .navigator .logo
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+.page .navigator .logo .logoText
+{
+    margin-left: 10%;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #094b65;
+    align-items: center;
+    line-height: 0;
+}
+.page .navigator .menu
+{
+    width: 50%;
+}
+.page .navigator .menu ul
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 50px;
+}
+.page .navigator .menu ul li
+{
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin: auto;
+}
+.page .navigator .menu ul li a
+{
+    text-decoration: none;
+    color: #094b65;
+}
+.page .content
+{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    margin: auto;
+}
+.page .content .title
+{
+    padding: 40px;
+    width: 40%;
+    height: 700px;
+    margin-left: 50px;
+}
+.page .content .img-title
+{
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    height: 700px;
+}
+.page .content .title h2
+{
+        text-transform: uppercase;
+        font-size: 6em;
+        color: #094b65;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 2px;
+        line-height: 100px;
+        flex-wrap: wrap;
+}
+.page .content .title p
+{
+    font-size: 2em;
+    font-weight: 500;
+    color: #094b65;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    padding-left: 50px;
+    flex-wrap: wrap;
+}
+.page .content .img-title img
+{
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.page .content .title button
+{
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    color: #094b65;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 10px;
+    padding:0 20px;
+    margin-left: 30%;
+    margin-top: 50px;
+    font-size: 1em;
+    font-weight: 700;
+    border: none;
+}
+.page .content .title button:hover
+{
+    background: #094b65;
+    color: #fff;
+}
+@media (max-width: 991px)
+{
+    .page
+    {
+        width: 100%;
+        height: 100vh;
+    }
+    .page .content .title button
+    {
+        margin-top: 50px;
+        font-size: 20px;
+        width: 150px;
+        height: 30px;
+        font-weight: 500;
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: auto;
+    }
+    .page .navigator .logo
+    {
+    width: 20%;
+    }
+    .page .navigator .logo .logoText
+    {
+        font-size: 1.5em;
+    }
+    .page .navigator .menu ul li
+    {
+        font-size: 15px;
+        font-weight: 700;
+        font-family: sans-serif;
+        padding:10px;
+    }
+    .page .navigator .menu
+    {
+        width: 80%;
+    }
+    .page .content
+    {
+        padding-top: 20px;
+    }
+    .page .content .title
+    {
+        padding: 10px;
+        min-height: 100%;
+        margin-left: 20px;
+        z-index: 1000;
+    }
+    .page .content .img-title
+    {
+        padding: 10px;
+        min-height: 100%;
+    }
+    .page .content .title h2
+    {
+        position: absolute;
+        content: '';
+        top: 10%;
+        left: 15%;
+        text-transform: uppercase;
+        font-size: 3em;
+        color: #094b65;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 2px;
+        margin-left: -20px;
+    }
+    .page .content .title p
+    {
+        font-size: 30px;
+        font-weight: 500;
+        color: #094b65;
+        letter-spacing: 2px;
+        flex-wrap: wrap;
+        position: absolute;
+        content: '';
+        top: 15%;
+        left: 10%;
+        width: 50%;
+    }
+    .page .content .img-title img
+    {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        width: 800px;
+        height: 600px;
+        object-fit: contain;
+    }
+    .page .content
+    {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .page
+    {
+        width: 100%;
+        height: 70vh;
+    }
+    .page .content .img-title img
+    {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        width: 500px;
+        height: 400px;
+        object-fit: contain;
+    }
+    .page .content .title h2
+    {
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #094b65;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 2px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .page .content .title p
+    {
+        font-size: 15px;
+        font-weight: 500;
+        color: #094b65;
+        padding-top: 10px;
+        padding-left: 25px;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .page .content .img-title
+    {
+        padding: 10px;
+        min-height: 100%;
+    }
+    .page .content .title
+    {
+        padding: 10px;
+        min-height: 100%;
+        z-index: 1000;
+    }
+    .page .content
+    {
+        padding-top: 20px;
+    }
+    .page .navigator .logo
+    {
+    width: 20%;
+    }
+    .page .navigator .logo .logoText
+    {
+        font-size: 1em;
+    }
+    .page .navigator .menu ul li
+    {
+        font-size: 12px;
+        font-weight: 700;
+        font-family: sans-serif;
+        padding:5px;
+    }
+    .page .navigator .menu
+    {
+        width: 70%;
+    }
+    .page .content
+    {
+        margin-top: 10%;
+    }
+    .page .content .title button
+    {
+        margin-top: 50px;
+        font-size: 20px;
+        width: 150px;
+        height: 30px;
+        font-weight: 500;
+        position: absolute;
+        content: '';
+        top: 60%;
+        left: auto;
+    }
+}

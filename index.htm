@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/content_01.css" rel="stylesheet" type="text/css">
+    <link href="CSS/content_02.css" rel="stylesheet" type="text/css">
+    <title>WEBSITE DEVELOPMENT</title>
+</head>
+<body>
+    <section class="page" id="page">
+        <div class="navigator">
+            <div class="logo">
+                <div class="logoText">LOGO</div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#page">Home</a></li>
+                    <li><a href="#pagetwo">Work</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title reveal">
+                <h2>WEB DESIGNING </h2>
+                <p>Creativity & Services <br><br>
+                    
+                    Web development services help create all types of 
+                    web-based software and ensure great experience for web users.</p>
+                <button>Get Started</button>
+            </div>
+            <div class="img-title reveal">
+                <img src="assets/page1img.png">
+            </div>
+        </div>
+    </section>
+    <!--second page-->
+    <section class="page_two" id="pagetwo">
+        <div class="samplework reveal">
+            <h2>WORK</h2>
+            <p>SAMPLE WORK FROM GOOGLE</p>
+        </div>
+        <div class="work">
+            <div class="project_one project reveal">
+                <img src="assets/project1.jpg">
+                <h2>WEB DESIGN</h2>
+                <p>https://unsplash.com/s/photos/web-designer-banner</p>
+            </div>
+            <div class="project_two project reveal">
+                <img src="assets/project2.jpg">
+                <h2>WEB LAYOUT</h2>
+                <p>https://unsplash.com/s/photos/web-designer-banner</p>
+            </div>
+            <div class="project_three project reveal">
+                <img src="assets/project3.jpg">
+                <h2>WEB CONTENT</h2>
+                <p>https://unsplash.com/s/photos/web-designer-banner</p>
+            </div>
+        </div>
+        <div class="work_description">
+            <p>Appnovation offers a variety of website design 
+                and development services, from creating mobile 
+                web development solutions and responsive website designs</p>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+
+             function reveal(){
+                  var reveal = document.querySelectorAll('.reveal');
+                  var windowheight = window.innerHeight;
+                  
+                for (var i = 0;i <= reveal.length;i++)
+                {
+                  var revealtop = reveal[i].getBoundingClientRect().top;
+                  var revealpoint = 150;
+                  if(revealtop < windowheight - revealpoint){
+                    reveal[i].classList.add('active');
+                  }
+                  else
+                  {
+                    reveal[i].classList.remove('active');
+                  }
+                }
+            }
+        </script>
+    </section>
+</body>
+</html>

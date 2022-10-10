@@ -1,0 +1,254 @@
+.page_two
+{
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.page_two .samplework
+{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    padding-bottom: 10px;
+}
+.page_two .samplework h2
+{
+    font-size: 6em;
+    font-weight: 700;
+    color: #094b65;
+    text-align: center;
+    font-style: italic;
+}
+.page_two .samplework p
+{
+    font-size: 1em;
+    font-weight: 700;
+    color: #094b65;
+    flex-wrap: wrap;
+    font-style: italic;
+}
+.page_two .work
+{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page_two .work_description
+{
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+}
+.page_two .work .project_one
+{
+    width: 30%;
+    height: 80%;
+    background: white;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.page_two .work .project_two
+{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.page_two .work .project_three
+{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+ }
+ .page_two .work .project img
+{
+    width: 100%;
+    height: 550px;
+    object-fit: contain;
+}
+.page_two .work_description p
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #094b65;
+    text-align: center;
+    font-style: italic;
+    padding: 40px;
+}
+.page_two .project h2
+{
+    text-align: center;
+    color: #094b65;
+    font-size: 2em;
+    font-weight: 700;
+}
+.page_two .work .project
+{
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    height: 70vh;
+    margin: auto;
+}
+.page_two .project p
+{
+    text-align: center;
+    color: #094b65;
+    font-size: 1em;
+    font-weight: 700;
+}
+.project_one
+{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.project_one.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.project_two
+{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.project_two.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.project_three
+{
+    position: relative;
+    transform: translateX(350px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.project_three.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.samplework
+{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.samplework.active
+{
+    transform: translateX(0px);
+    opacity: 1;
+}
+@media (max-width: 991px)
+{
+    .page_two
+    {
+        width: 100%;
+        height: 100vh;
+        padding-top: 20px;
+    }
+    .page_two .samplework h2
+    {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .page_two .work
+    {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        width: 90%;
+        height: 50vh;
+    }
+    .page_two .work .project
+    {
+        width: 90%;
+        height: 35vh;
+        margin-top: 20px;
+        margin-left: 10%;   
+    }
+    .page_two .work .project img
+    {
+        height: 220px;
+        object-fit: contain;
+    }
+}
+@media (max-width: 500px)
+{
+    .page_two
+    {
+        width: 100%;
+        height: 50vh;
+        padding-top: 20px;
+    }
+    .page_two .work
+    {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        width: 80%;
+        height: 50vh;
+    }
+    .page_two .samplework h2
+    {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin:auto;
+    } 
+    .page_two .samplework p
+    {
+        font-size: 12px;
+        font-weight: 500;
+        margin:auto;
+    }
+    .page_two .work .project
+    {
+        width: 80%;
+        height: 35vh;
+        margin-top: 20px;
+        margin-left: 25%;   
+    }
+    .page_two .work .project img
+    {
+        height: 220px;
+        object-fit: contain;
+    }
+    .page_two .work_description p
+    {
+        font-size: 12px;
+        font-weight: 500;
+        color: #094b65;
+        text-align: center;
+        font-style: italic;
+        flex-wrap: wrap;
+        margin-top: 10%;
+    }
+    .page_two .project h2
+    {
+        text-align: center;
+        color: #094b65;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    .page_two .project p
+    {
+        font-size: 12px;
+    }
+}
